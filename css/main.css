@@ -36,10 +36,9 @@ path {
 	padding: 20px;
 	box-sizing: border-box;
 	width: 300px;
-	height: 400px;
 	box-shadow: 0 0 32px 10px #ccc;
 	left: 50px;
-	bottom: calc(50% - 200px);
+	bottom: calc(25% - 200px);
 	font-family: sans-serif;
 	background-color:white;
 }
@@ -87,4 +86,12 @@ path {
 
 .yellow {
   background-color: #ffd65c;
+}
+
+.brown {
+  background-color: #9d6b61;
+}
+
+.black {
+  background-color: #423e3e;
 }
