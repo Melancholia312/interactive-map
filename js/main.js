@@ -7,4 +7,3 @@ $('.part').hover (
 		$('.description').fadeOut(50);
 	}
 )
-

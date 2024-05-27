@@ -13,8 +13,12 @@
 </head>
 
 <body>
-	<div class="map">
+	<div class="map" id="active">
 		<svg viewBox="0 0 1140 1140">
+			<a href="https://discord.com/channels/1175566322462109746/1197888564659245117" target=”_blank” >
+			<path class="part" d="m 347.96821,604.97251 8.3313,11.97625 h 2.7771 l 8.852,-11.62911 -10.067,-22.56395 z" fill="#3ef757" description-data="<img src='media/hell.png'>Бездна">
+			</a>
+
 			<a href="https://discord.com/channels/1175566322462109746/1197888564659245117" target=”_blank” >
 			<path class="part" d="m 451.55376,746.35941 8.3313,11.97625 h 2.7771 l 8.852,-11.62911 -10.067,-22.56395 z" fill="#3ef757" description-data="<img src='media/nikki.png'>Литл н Никки">
 			</a>
@@ -125,31 +129,38 @@
 			</div>
 
 			<img src="media/cow.jpg" alt="">
-			
-			<div class="info">
-				Информация
-				<hr>
-				<div><div class='box red'></div> - Квесты Йоны</div>
-				<br>
-				<div><div class='box blue'></div> - Квесты Парня</div>
-				<br>
-				<div><div class='box green'></div> - Универсальные квесты</div>
-				<br>
-				<div><div class='box yellow'></div> - Сундуки</div>
-				<br>
-				<div><div class='box brown'></div> - Торговец</div>
-				<br>
-				<div><div class='box black'></div> - Мини боссы</div>
-			</div>	
-		</div>
+		<div class="info">
+			Информация
+			<hr>
+			<div><div class='box red'></div> - Квесты Йоны</div>
+			<br>
+			<div><div class='box blue'></div> - Квесты Парня</div>
+			<br>
+			<div><div class='box green'></div> - Места интереса</div>
+			<br>
+			<div><div class='box yellow'></div> - Сундуки</div>
+			<br>
+			<div><div class='box brown'></div> - Торговец</div>
+			<br>
+			<div><div class='box black'></div> - Мини боссы</div>
+			<br>
+			<hr>
+			<fieldset>
+  <legend>Выберите тип карты:</legend>
+
+  <div>
+    <input type="radio" id="active" name="type" value="0" checked />
+    <label for="huey">Карта активностей</label>
+  </div>
+
+  <div>
+    <input type="radio" id="native" name="type" value="1" />
+    <label for="dewey">Карта лагерей туземцев</label>
+  </div>
 
 
-	<!--[if lt IE 9]>
-	<script src="libs/html5shiv/es5-shim.min.js"></script>
-	<script src="libs/html5shiv/html5shiv.min.js"></script>
-	<script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
-	<script src="libs/respond/respond.min.js"></script>
-<![endif]-->
+	</div>
+	
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="js/main.js"></script>
 </body>
