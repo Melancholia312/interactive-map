@@ -13,9 +13,7 @@ svg {
 	width: 100%;
 }
 
-.part {
-	border: 1px solid black;
-}
+
 
 path {
   stroke: #d8d5d3;
@@ -24,7 +22,7 @@ path {
 }
 
 .part:hover {
-	transition: opacity .2s ease;
+	transition: opacity .1s ease;
 	opacity: .5;
 	cursor: pointer;
 }
@@ -95,3 +93,8 @@ path {
 .black {
   background-color: #423e3e;
 }
+
+.quest-path {
+	opacity: 0;
+}
+	 
