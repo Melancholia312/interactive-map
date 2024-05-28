@@ -45,4 +45,18 @@ $("#quest-1").on("mouseout",function(){
 });
 
 
+$("#quest-4").on("mouseover",function(){
+    $(".quest-path-3").css({
+        opacity: 1,
+	transition : 'opacity 0.25s ease-in-out'
+    })
+});
+
+
+$("#quest-4").on("mouseout",function(){
+    $(".quest-path-3").css({
+        opacity: 0
+    })
+});
+
 
