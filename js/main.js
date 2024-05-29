@@ -74,3 +74,25 @@ $("#quest-5").on("mouseout",function(){
 });
 
 
+$("#quest-shino").on("mouseover",function(){
+    $("#quest-shino-1").css({
+        opacity: 1,
+	transition : 'opacity 0.25s ease-in-out'
+    })
+    $(".quest-path-shino").css({
+        opacity: 1,
+	transition : 'opacity 0.25s ease-in-out'
+    })
+});
+
+
+$("#quest-shino").on("mouseout",function(){
+    $("#quest-shino-1").css({
+        opacity: 0
+    })
+    $(".quest-path-shino").css({
+        opacity: 0
+    })
+});
+
+

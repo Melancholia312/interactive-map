@@ -35,7 +35,7 @@ path {
 	box-sizing: border-box;
 	width: 300px;
 	box-shadow: 0 0 32px 10px #ccc;
-	left: 50px;
+	right: 50px;
 	bottom: calc(25% - 200px);
 	font-family: sans-serif;
 	background-color:white;
