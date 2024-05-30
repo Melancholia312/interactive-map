@@ -39,6 +39,7 @@ path {
 	bottom: calc(25% - 200px);
 	font-family: sans-serif;
 	background-color:white;
+	font-size: x-large;
 }
 
 .description img {
@@ -94,10 +95,20 @@ path {
   background-color: #423e3e;
 }
 
+.camp {
+	background-color: #940000;
+}
+
 .quest-path {
 	opacity: 0;
 	pointer-events: none;
 }
 
+#activity-map {
+	display: block;
+}
 
+#camp-map {
+	display: none;
+}
 	 

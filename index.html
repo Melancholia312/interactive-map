@@ -14,7 +14,7 @@
 
 <body>
 	<div class="map" id="active">
-		<svg viewBox="0 0 1140 1140" preserveAspectRatio="xMidYMid meet">
+		<svg viewBox="0 0 1140 1140" id="activity-map">
 			<a href="https://discord.com/channels/1175566322462109746/1197888564659245117" target=”_blank” >
 			<path class="part" d="m 347.96821,604.97251 8.3313,11.97625 h 2.7771 l 8.852,-11.62911 -10.067,-22.56395 z" fill="#3ef757" description-data="<img src='media/hell.png'>Бездна"/>
 			</a>
@@ -43,6 +43,11 @@
 			<a href="https://discord.com/channels/1175566322462109746/1197888606526783579" target=”_blank” >
 			<path class="part" id="quest-5" d="m 543.59592,380.86074 8.3313,11.97625 h 2.7771 l 8.85201,-11.62911 -10.06699,-22.56395 z" fill="#3ef757" description-data="<img src='media/gates.png'> Врата"/>
 			</a>
+			
+			<path  class="quest-path quest-giant" d="m 558.35729,369.82908 33.70038,-14.64357 -2.7001,-30.92839 -65.29326,-29.4556 4.66381,-20.61893 -17.67337,-11.78224 -28.71921,23.31902 -20.37346,-18.90068 6.62751,-25.03726 36.67827,-30.75227 -48.15368,-40.92304 4.17288,-5.33882 53.12973,46.69579 -40.01489,33.95818 -5.33883,19.47838 13.27246,12.41951 28.35103,-22.65091 26.7555,18.65522 -4.78653,18.53249 63.42612,28.5333 0.98185,40.23344 -36.77229,14.90648 z" fill="#4061ef"/>
+			<circle class="quest-path quest-giant" r="10" fill="#4061ef" stroke='#d8d5d3' strokeWidth='4'>
+    			<animateMotion dur="2s" repeatCount="indefinite" path="m 558.35729,369.82908 33.70038,-14.64357 -2.7001,-30.92839 -65.29326,-29.4556 4.66381,-20.61893 -17.67337,-11.78224 -28.71921,23.31902 -20.37346,-18.90068 6.62751,-25.03726 36.67827,-30.75227 -48.15368,-40.92304 4.17288 z" />
+  			</circle>
 
 			<a href="https://discord.com/channels/1175566322462109746/1197888320437501952" target=”_blank” >
 			<path class="part" d="m 542.61407,243.40125 8.3313,11.97625 h 2.7771 l 8.85201,-11.62911 -10.06699,-22.56395 z" fill="#3ef757" description-data="<img src='media/2.jpg'> Квест постройка моста (в будущих обновлениях)"/>
@@ -97,7 +102,7 @@
 			</a>
 
 			<a href="https://discord.com/channels/1175566322462109746/1197888606526783579" target=”_blank” >
-			<path class="part" d="m 444.42882,160.43462 8.3313,11.97625 h 2.7771 l 8.852,-11.62911 -10.067,-22.56395 z" fill="#4061ef" description-data="<img src='media/giant.png'> Гигант  <hr> Выпадает мужской верстак <img src='media/1.jpg'>"/>
+			<path class="part" id="quest-giant" d="m 444.42882,160.43462 8.3313,11.97625 h 2.7771 l 8.852,-11.62911 -10.067,-22.56395 z" fill="#4061ef" description-data="<img src='media/giant.png'> Гигант  <hr> Выпадает мужской верстак <img src='media/1.jpg'>"/>
 			</a>
 
 			<a href="#" target=”_blank” >
@@ -161,7 +166,26 @@
   			</circle>
 
 		</svg>
-
+		<svg viewBox="0 0 1140 1140" id="camp-map">
+		
+			<path class="part" d="m 684.04195,1012.892 8.3313,11.9763 h 2.7771 l 8.852,-11.6291 -10.067,-22.56394 z" fill="#940000" description-data="Маленький лагерь <hr> Туземка - 1 <br> Туземец - 1"/>
+			<path class="part" d="m 549.03709,945.63503 8.3313,11.9763 h 2.7771 l 8.852,-11.6291 -10.067,-22.56394 z" fill="#940000" description-data="Маленький лагерь <hr> Туземец - 3"/>
+			<path class="part" d="m 368.61018,991.6542 8.3313,11.9763 h 2.7771 l 8.852,-11.6291 -10.067,-22.56394 z" fill="#940000" description-data="Средний лагерь <hr> Туземка - 3 <br> Туземец - 4 <br> Огромный туземец - 1"/>
+			<path class="part" d="m 771.32567,922.54435 8.3313,11.9763 h 2.7771 l 8.852,-11.6291 -10.067,-22.56394 z" fill="#940000" description-data="Средний лагерь <hr> Туземец - 2 <br> Огромный туземец - 1"/>
+			<path class="part" d="m 694.54245,780.99412 8.3313,11.9763 h 2.7771 l 8.852,-11.6291 -10.067,-22.56394 z" fill="#940000" description-data="Большой лагерь <hr> Туземка - 4 <br> Туземка девочка - 2 <br> Туземец - 4 <br> Огромный туземец - 2 <br> Старая туземка - 2 <br> Старый туземец - 1"/>
+			<path class="part" d="m 564.29034,778.61596 8.3313,11.9763 h 2.7771 l 8.852,-11.6291 -10.067,-22.56394 z" fill="#940000" description-data="Средний лагерь <hr> Туземка - 5 <br> Туземец - 6 <br> Огромный туземец - 2"/>
+			<path class="part" d="m 564.29034,778.61596 8.3313,11.9763 h 2.7771 l 8.852,-11.6291 -10.067,-22.56394 z" fill="#940000" description-data="Маленький лагерь <hr> Туземка - 1 <br> Туземка девочка - 1 <br> Туземец - 1"/>
+			<path class="part" d="m 764.09752,630.84701 8.3313,11.9763 h 2.7771 l 8.852,-11.6291 -10.067,-22.56394 z" fill="#940000" description-data="Большой лагерь <hr> Туземка - 5 <br> Туземка девочка - 2 <br> Туземец - 6 <br> Маленький туземец - 3 <br> Огромный туземец - 3 <br> Старая туземка - 1 <br> Старый туземец - 1"/>
+			<path class="part" d="m 298.20803,593.53658 8.3313,11.9763 h 2.7771 l 8.852,-11.6291 -10.067,-22.56394 z" fill="#940000" description-data="Маленький лагерь <hr> Туземка - 1 <br> Туземка девочка - 2 <br> Туземец - 1 <br> Старая туземка - 2"/>			
+			<path class="part" d="m 742.49674,416.31202 8.3313,11.9763 h 2.7771 l 8.852,-11.6291 -10.067,-22.56394 z" fill="#940000" description-data="Большой лагерь <hr> Туземка - 6 <br> Туземка девочка - 2 <br> Туземец - 6 <br> Маленький туземец - 3 <br> Огромный туземец - 2 <br> Старая туземка - 2 <br> Старый туземец - 2"/>	
+			<path class="part" d="m 387.06577,275.90697 8.3313,11.9763 h 2.7771 l 8.852,-11.6291 -10.067,-22.56394 z" fill="#940000" description-data="Средний лагерь <hr> Туземка - 4 <br> Туземка девочка - 1 <br> Туземец - 4 <br> Огромный туземец - 2"/>	
+			<path class="part" d="m 1068.4721,825.74493 8.3313,11.9763 h 2.7771 l 8.852,-11.6291 -10.067,-22.56394 z" fill="#940000" description-data="Средний лагерь <hr> Туземка девочка - 6"/>	
+			<path class="part" d="m 860.81009,795.30747 8.3313,11.9763 h 2.7771 l 8.852,-11.6291 -10.067,-22.56394 z" fill="#940000" description-data="Средний лагерь <hr> Туземка - 5"/>	
+			<path class="part" d="m 962.43192,784.01616 8.3313,11.9763 h 2.7771 l 8.852,-11.6291 -10.067,-22.56394 z" fill="#940000" description-data="Средний лагерь <hr> Туземка - 2 <br> Туземец - 3 <br> Маленький туземец - 1 <br> Огромный туземец - 1 <br> Старая туземка - 1"/>	
+			<path class="part" d="m 970.77767,289.65292 8.3313,11.9763 h 2.7771 l 8.852,-11.6291 -10.067,-22.56394 z" fill="#940000" description-data="Маленький лагерь <hr> Туземка - 4 <br> Туземец - 5"/>	
+			<path class="part" d="m 677.6944,267.56122 8.3313,11.9763 h 2.7771 l 8.852,-11.6291 -10.067,-22.56394 z" fill="#940000" description-data="Средний лагерь <hr> Туземка - 3 <br> Туземец - 5 <br> Маленький туземец - 4 <br> Огромный туземец - 5"/>	
+			
+		</svg>
 			<div class="description">
 				
 			</div>
@@ -182,27 +206,30 @@
 			<br>
 			<div><div class='box black'></div> - Мини боссы</div>
 			<br>
+			<div><div class='box camp'></div> - Лагеря туземцев</div>
+			<br>
 			<hr>
 			<fieldset>
-  <legend>Выберите тип карты:</legend>
+			  <legend>Выберите тип карты:</legend>
 
-  <div>
-    <input type="radio" id="active" name="type" value="0" checked />
-    <label for="huey">Карта активностей</label>
-  </div>
+			  <div>
+				<input type="radio" id="active" name="type" value="0" checked />
+				<label for="huey">Карта активностей</label>
+			  </div>
 
-  <div>
-    <input type="radio" id="native" name="type" value="1" />
-    <label for="dewey">Карта лагерей туземцев (В РАЗРАБОТКЕ)</label>
-  </div>
-	</fieldset>
-	<br>
-	<a href="https://boosty.to/dsmcontent/single-payment/donation/583494/target?share=target_link">На еду</a>
-	<br>
-	<a href="https://discord.gg/6GcTZtvcWj">Дискорд с гайдами по игре</a>
-</div>
+			  <div>
+				<input type="radio" id="native" name="type" value="1" />
+				<label for="dewey">Карта лагерей туземцев</label>
+			  </div>
+				</fieldset>
+				<br>
+				<a href="https://boosty.to/dsmcontent/single-payment/donation/583494/target?share=target_link">На еду</a>
+				<br>
+				<a href="https://discord.gg/6GcTZtvcWj">Дискорд с гайдами по игре</a>
+			</div>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="js/main.js"></script>
+
 </body>
 </html>

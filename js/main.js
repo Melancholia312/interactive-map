@@ -1,3 +1,14 @@
+$("input:radio[name=type]").change(function () {
+    if ($(this).val() == 0) {
+	$("#camp-map").hide();
+	$("#activity-map").show();
+    } else {
+	$("#activity-map").hide();
+	$("#camp-map").show();
+    }
+});
+
+
 $('.part').hover (
 	function() {
 		$('.description').html($(this).attr('description-data'));
@@ -96,3 +107,17 @@ $("#quest-shino").on("mouseout",function(){
 });
 
 
+
+$("#quest-giant").on("mouseover",function(){
+    $(".quest-giant").css({
+        opacity: 1,
+	transition : 'opacity 0.25s ease-in-out'
+    })
+});
+
+
+$("#quest-giant").on("mouseout",function(){
+    $(".quest-giant").css({
+        opacity: 0
+    })
+});
