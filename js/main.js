@@ -121,3 +121,18 @@ $("#quest-giant").on("mouseout",function(){
         opacity: 0
     })
 });
+
+
+$("#quest-salli").on("mouseover",function(){
+    $(".quest-salli").css({
+        opacity: 1,
+	transition : 'opacity 0.25s ease-in-out'
+    })
+});
+
+
+$("#quest-salli").on("mouseout",function(){
+    $(".quest-salli").css({
+        opacity: 0
+    })
+});
