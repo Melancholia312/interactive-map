@@ -136,3 +136,60 @@ $("#quest-salli").on("mouseout",function(){
         opacity: 0
     })
 });
+
+
+$("#quest-dalman").on("mouseover",function(){
+    $(".quest-dalman").css({
+        opacity: 1,
+	transition : 'opacity 0.25s ease-in-out'
+    })
+});
+
+
+$("#quest-dalman").on("mouseout",function(){
+    $(".quest-dalman").css({
+        opacity: 0
+    })
+});
+
+$("#quest-reika").on("mouseover",function(){
+    $("#quest-2").css({
+        opacity: 1,
+	transition : 'opacity 0.25s ease-in-out'
+    })
+    $("#quest-3").css({
+        opacity: 1,
+	transition : 'opacity 0.25s ease-in-out'
+    })
+    $(".quest-path-1").css({
+        opacity: 1,
+	transition : 'opacity 0.25s ease-in-out'
+    })
+    $(".quest-path-2").css({
+        opacity: 1,
+	transition : 'opacity 0.25s ease-in-out'
+    })
+	$(".quest-path-4").css({
+        opacity: 1,
+	transition : 'opacity 0.25s ease-in-out'
+    })
+});
+
+
+$("#quest-reika").on("mouseout",function(){
+    $("#quest-2").css({
+        opacity: 0
+    })
+    $("#quest-3").css({
+        opacity: 0
+    })
+    $(".quest-path-1").css({
+        opacity: 0
+    })
+    $(".quest-path-2").css({
+        opacity: 0
+    })
+	$(".quest-path-4").css({
+        opacity: 0
+    })
+});
