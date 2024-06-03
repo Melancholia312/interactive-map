@@ -58,6 +58,21 @@ path {
 	font-family: sans-serif;
 	text-align: left;
 	background-color:white;
+	font-size: large;
+}
+
+.donateri {
+	position: absolute;
+	padding: 20px;
+	box-sizing: border-box;
+	width: 300px;
+	box-shadow: 0 0 32px 10px #ccc;
+	right: 50px;
+	top: calc(0% - 0px);
+	font-family: sans-serif;
+	text-align: left;
+	background-color:white;
+	font-size: large;
 }
 
 
